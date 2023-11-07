@@ -42,7 +42,7 @@
 
 .lista-menu__titulo{
     color: var(--laranja);
-    font-style: bold;
+    font-weight: 700;
 }
 
 .lista-menu__link{
@@ -50,4 +50,8 @@
     background-clip: text;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.container__botao{
+    display: none;
 }
