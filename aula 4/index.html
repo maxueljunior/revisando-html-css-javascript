@@ -34,11 +34,54 @@
                 </li>
             </ul>
             <img src="./asserts/Logo.svg" alt="logo alura" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo-negrito">Alura</b>Books</h1>
         </div>
+
+        <ul class="opcoes">
+            
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <label for="opcoes-menu">
+                <li class="opcoes__item">
+                    Categorias
+                </li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design & UX</a>
+                </li>
+            </ul>
+
+            <li class="opcoes__item">
+                <a href="#" class="opcoes__link">Favoritos</a>
+            </li>
+            <li class="opcoes__item">
+                <a href="#" class="opcoes__link">Minha Estante</a>
+            </li>
+        </ul>
+
         <div class="container">
-            <a href="#"><img src="./asserts/Favoritos.svg" class="container__imagem"></a>
-            <a href="#"><img src="./asserts/Sacola.png" class="container__imagem"></a>
-            <a href="#"><img src="./asserts/Usuario.png" class="container__imagem"></a>
+            <a href="#"><img src="./asserts/Favoritos.svg" class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="./asserts/Sacola.png" class="container__imagem">
+                <p class="container__texto">Minha Sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="./asserts/Usuario.png" class="container__imagem">
+                <p class="container__texto">Meu Perfil</p>
+            </a>
         </div>
     </header>
     <section class="banner">
@@ -49,39 +92,41 @@
 
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide"><img src="./asserts/ApacheKafka.png" alt="kafka"></div>
-              <div class="swiper-slide"><img src="./asserts/Angular two.png" alt="angular"></div>
-              <div class="swiper-slide"><img src="./asserts/Guia Front-end.png" alt="guia front end"></div>
-              <div class="swiper-slide"><img src="./asserts/Javascript.png" alt="Javascript"></div>
-              <div class="swiper-slide"><img src="./asserts/MEAN.png" alt="mean"></div>
-              <div class="swiper-slide"><img src="./asserts/Portugol.png" alt="portugol"></div>
-            </div>
-          </div>
-
-        <div class="card">
-            <div class="card__descricao">
-                <div class="descricao">
-                    <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
-                    <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
-                    <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./asserts/ApacheKafka.png" alt="kafka"></div>
+                <div class="swiper-slide"><img src="./asserts/Angular two.png" alt="angular"></div>
+                <div class="swiper-slide"><img src="./asserts/Guia Front-end.png" alt="guia front end"></div>
+                <div class="swiper-slide"><img src="./asserts/Javascript.png" alt="Javascript"></div>
+                <div class="swiper-slide"><img src="./asserts/MEAN.png" alt="mean"></div>
+                <div class="swiper-slide"><img src="./asserts/Portugol.png" alt="portugol"></div>
                 </div>
-                <img src="./asserts/Angular.png" alt="angular" class="descricao__imagem">
             </div>
 
-            <div class="card__botoes">
-                <ul class="botoes">
-                    <li class="botoes__item"><img src="./asserts/Favoritos.svg" alt="favoritar livro"></li>
-                    <li class="botoes__item"><img src="./asserts/Sacola.png" alt="adicionar carrinho"></li>
-                </ul>
-                <a href="#" class="botoes__ancora">Saiba mais</a>
+            <div class="card">
+                <div class="card__descricao">
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                        <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    </div>
+                    <img src="./asserts/Angular.png" alt="angular" class="descricao__imagem">
+                </div>
+
+                <div class="card__botoes">
+                    <ul class="botoes">
+                        <li class="botoes__item"><img src="./asserts/Favoritos.svg" alt="favoritar livro"></li>
+                        <li class="botoes__item"><img src="./asserts/Sacola.png" alt="adicionar carrinho"></li>
+                    </ul>
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                </div>
             </div>
-        </div>   
+        </div>  
     </section>
 
     <section class="carrossel">
@@ -151,6 +196,96 @@
             </li>
         </ul>
     </section>
+
+    <section class="contato">
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu email" class="contato__email">
+    </section>
+
+    <hr/>
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Grupo Alura</h2>
+        <ul class="lista__rodape">
+            <li class="lista__rodape__titulo">Educação</li>
+            <li class="lista__rodape__item">
+                <img src="./asserts/CasaDoCodigo.png" alt="casa do codigo">
+                <a href="#" class="lista__rodape__link">Casa do codigo</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./asserts/Caelum.png" alt="caelum">
+                <a href="#" class="lista__rodape__link">Caelum</a>
+            </li>
+        </ul>
+
+        <ul class="lista__rodape">
+            <li class="lista__rodape__titulo">Educação Online</li>
+            <li class="lista__rodape__item">
+                <img src="./asserts/Alura.png" alt="alura">
+                <a href="#" class="lista__rodape__link">Alura</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./asserts/AluraEmpresas.png" alt="caelum">
+                <a href="#" class="lista__rodape__link">Alura para empresas</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./asserts/AluraLATAM.png" alt="caelum">
+                <a href="#" class="lista__rodape__link">Alura LATAM</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./asserts/AluraStart.png" alt="caelum">
+                <a href="#" class="lista__rodape__link">Alura Start</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./asserts/MusicDot.png" alt="caelum">
+                <a href="#" class="lista__rodape__link">MusicDot</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./asserts/AluraLingua.png" alt="caelum">
+                <a href="#" class="lista__rodape__link">Alura Lingua</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./asserts/PM3.png" alt="caelum">
+                <a href="#" class="lista__rodape__link">PM3</a>
+            </li>
+        </ul>
+
+        <ul class="lista__rodape">
+            <li class="lista__rodape__titulo">Comunidade</li>
+            <li class="lista__rodape__item">
+                <img src="./asserts/HipstersTech.png" alt="alura">
+                <a href="#" class="lista__rodape__link">Hipsters ponto Tech</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./asserts/ScubaDev.png" alt="caelum">
+                <a href="#" class="lista__rodape__link">Scuba Dev</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./asserts/LayersTech.png" alt="caelum">
+                <a href="#" class="lista__rodape__link">Layers ponto Tech</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./asserts/LikeABoss.png" alt="caelum">
+                <a href="#" class="lista__rodape__link">Like a Boss</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./asserts/CarreiraSemFronteira.png" alt="caelum">
+                <a href="#" class="lista__rodape__link">Crreira sem Fronteira</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./asserts/HipstersJobs.png" alt="caelum">
+                <a href="#" class="lista__rodape__link">Hipster ponto Jobs</a>
+            </li>
+            <li class="lista__rodape__item">
+                <img src="./asserts/GUJ.png" alt="caelum">
+                <a href="#" class="lista__rodape__link">GUJ</a>
+            </li>
+        </ul>
+
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
