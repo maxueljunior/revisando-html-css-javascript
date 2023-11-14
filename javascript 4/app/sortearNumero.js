@@ -11,3 +11,5 @@ elementoMenoValor.textContent = menorValor
 
 const elementoMaiorValor = document.getElementById('maior-valor')
 elementoMaiorValor.textContent = maiorValor
+
+console.log(numeroSecreto);
