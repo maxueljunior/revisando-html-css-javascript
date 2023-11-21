@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho{
+    width: 100%;
+    border: 1px solid red;
+}
+
+.cabecalho__nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho__nav__lista{
+    display: flex;
+}
+
+.cabecalho__nav__lista-item{
+    margin-right: 1em;
+    list-style-type: none;
+}
+
+.menu__lateral{
+    height: 100%;
+    width: 250px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.rodape{
+    border: 1px solid red;
+}
+
+.menu__card{
+    width: 400px;
+    height: 250px;
+    border: 1px solid blue;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
